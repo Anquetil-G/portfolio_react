@@ -1,0 +1,56 @@
+.about {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 30%;
+}
+@media screen and (max-width: 950px) {
+	.about {
+		padding: 50px 10%;
+	}
+}
+@media screen and (max-width: 450px){
+	.about {
+		padding: 0 30px;
+	}
+}
+.about .frame {
+	border: 1px solid #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	gap: 30px;
+	position: relative;
+}
+.about .frame::before {
+	content: "About me";
+	position: absolute;
+	width: calc(100% + 2px - 7px);
+	height: 23px;
+	top: -23px;
+	background: #fff;
+	color: #000;
+	align-items: center;
+	display: flex;
+	padding: 0 0 0 7px;
+	font-size: 0.9rem;
+}
+.about p {
+	line-height: 150%;
+	font-size: 1rem;
+}
+.about .skills {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.about .skills h2 {
+	font-size: 1.1rem;
+}
+.about .skills ul {
+	list-style: circle;
+	padding: 0 0 0 17px;
+}

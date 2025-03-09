@@ -1,0 +1,154 @@
+#heroHeader {
+	position: relative;
+	height: calc(100vh - 60px);
+	padding: 30px;
+}
+
+/* --------------------------------- Navbar --------------------------------- */
+
+#Navbar {
+	display: flex;
+  justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+}
+#heroHeader p {
+	padding: 3px;
+	width: 100px;
+}
+#heroHeader ul {
+	display: flex;
+}
+#heroHeader li {
+	width: 95px;
+	text-align: center;
+}
+#heroHeader li a {
+	padding: 3px 5px;
+}
+@media screen and (max-width: 540px){
+	#heroHeader p {
+		font-size: 0.9rem;
+	}
+	#heroHeader li {
+		width: 75px;
+	}
+	#heroHeader li a {
+		font-size: 0.8rem;
+	}
+}
+@media screen and (max-width: 435px) {
+	#heroHeader {
+		padding: 20px;
+	}
+	#heroHeader p {
+		font-size: 0.8rem;
+	}
+	#heroHeader li {
+		width: 70px;
+	}
+	#heroHeader li a {
+		font-size: 0.8rem;
+	}
+}
+
+/* ------------------------------ HeroHeaderImg ----------------------------- */
+
+#heroHeader #HeroHeaderImg {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 285px;
+	height: 375px;
+}
+#heroHeader .img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+#heroHeader .img .imgBal {
+	width: 285px;
+	height: 375px;
+	object-fit: cover;
+}
+#heroHeader .img .imgBal1 {
+	background: url("./img/hero-header.webp") center/cover;
+}
+#heroHeader .img .imgBal2 {
+	background: url("./img/hero-header2.webp") center/cover;
+}
+#heroHeader .img-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	mix-blend-mode: screen;
+}
+#heroHeader .img-overlay1 {
+	background: rgb(19, 19, 19);
+}
+#heroHeader .img-overlay2 {
+	background: rgb(20, 0, 11);
+}
+#heroHeader .img-blocks {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: space-between;
+	justify-content: space-between;
+}
+#HeroHeaderImg .img-blocks .block {
+	width: 15px;
+	height: 15px;
+	opacity: 0;
+	mix-blend-mode: hard-light;
+	transition: ease-in;
+}
+#HeroHeaderImg .img-blocks1 .block {
+	background: rgb(54, 54, 54);
+}
+#HeroHeaderImg .img-blocks2 .block {
+	background: rgb(233 204 218 / 87%);
+}
+#heroHeader .img-blocks .block.active {
+	opacity: 0.75;
+}
+@media screen and (max-width: 540px){
+	#HeroHeaderImg .img-blocks .block {
+		width: 12px;
+		height: 12px;
+	}
+	/* 19 -- */
+	/* 25 || */
+	#heroHeader #HeroHeaderImg {
+		width: 230px;
+		height: 300px;
+	}
+	#heroHeader .img .imgBal {
+		width: 228px;
+		height: 300px;
+	}
+}
+
+/* ------------------------------ CallToScroll ------------------------------ */
+
+#heroHeader .call-to-scroll {
+	position: absolute;
+	bottom: 45px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#heroHeader .call-to-scroll p {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+#heroHeader .call-to-scroll p span {
+	text-align: center;
+	color: #9c9c9c;
+	width: 110px;
+	font-size: 1rem;
+}
